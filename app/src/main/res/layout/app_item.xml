@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="?attr/selectableItemBackground"
+    android:orientation="horizontal"
+    android:paddingHorizontal="4dp"
+    android:paddingVertical="2dp"
+    android:gravity="center_vertical"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_margin="4dp" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="0.5"
+        android:layout_marginStart="5dp"
+        tools:text="Example app"
+        android:maxLines="2"
+        android:gravity="center_vertical"
+        android:id="@+id/app_info"/>
+
+    <ImageView
+        android:id="@+id/blocked"
+        android:src="@drawable/ic_block"
+        android:layout_marginHorizontal="4dp"
+        android:layout_width="wrap_content"
+        android:layout_height="12sp" />
+
+    <ImageView
+        android:id="@+id/temp_unblocked"
+        android:src="@drawable/ic_hourglass_top"
+        android:layout_marginHorizontal="4dp"
+        android:layout_width="wrap_content"
+        android:layout_height="14sp" />
+
+    <TextView
+        android:layout_width="8sp"
+        android:layout_height="fill_parent"
+        android:layout_weight="0.2"
+        tools:text="1.05 MB"
+        android:gravity="center_vertical|end"
+        android:id="@+id/traffic"/>
+</LinearLayout>
